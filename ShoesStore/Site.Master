@@ -1,0 +1,173 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ShoesStore.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - ShoesStore</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/Style.css" rel="stylesheet" />
+
+
+</head>
+   
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+         <!--******thêm logo*****-->  
+        <div id="TitleContent" style="text-align: center" class="shoeslogo">      
+            <a runat="server" href="~/">      
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/shoes_logo.jpg" BorderStyle="None" />      
+
+            </a><br /> 
+
+        </div>     
+        <!--***********************--> 
+
+        <div class="navbar navbar-inverse ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <a class="navbar-brand" runat="server" href="~/">Giày HOÀNG ANH</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/About">VỀ CHÚNG TÔI</a></li>
+                        <li><a runat="server" href="~/Contact">LIÊN HỆ</a></li>
+                        <li><a runat="server" href="~/BookList">SẢN PHẨM</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+        <%--<div id="CategoryMenu" style="text-align: center">             
+            <asp:ListView ID="categoryList" ItemType="ShoesStore.Models.Category" runat="server" SelectMethod="GetCategories" >                 
+                <ItemTemplate> 
+                    <b style="font-size: large; font-style: normal">                         
+                        <a href="/BookList.aspx?id=<%#: Item.CategoryID %>">                            
+                            <%#: Item.CategoryName %>     
+                        </a>    
+                    </b>    
+                </ItemTemplate>                 
+                <ItemSeparatorTemplate> | </ItemSeparatorTemplate>        
+            </asp:ListView>
+        </div> --%>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <!-- Footer -->
+            <footer class="page-footer font-small blue pt-4">
+
+              <!-- Footer Links -->
+              <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                  <!-- Grid column -->
+                  <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Giày Hoàng Anh</h5>
+                    <p>Luôn cố gắng và nỗ lực để mang đến cho khách hàng sự hài lòng nhất trong từng sản phẩm và dịch vụ.
+
+            Cảm ơn quý khách đã luôn đồng hành và ủng hộ shop, chúc quý khách vui vẻ mua sắm!</p>
+
+                  </div>
+                  <!-- Grid column -->
+
+                  <hr class="clearfix w-100 d-md-none pb-3">
+
+                  <!-- Grid column -->
+                  <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Hỗ trợ khách hàng</h5>
+
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!">Phương thức thanh toán</a>
+                      </li>
+                      <li>
+                        <a href="#!">Chính sách đổi trả hàng</a>
+                      </li>
+                      <li>
+                        <a href="#!">Cách tính phí vận chuyển</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Thông tin liên hệ</h5>
+
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!">0990.123.456</a>
+                      </li>
+                      <li>
+                        <a href="#!">FB: Giày Hoàng Anh</a>
+                      </li>
+                      <li>
+                        <a href="#!">hoanganh.vn@gmail.com</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+              </div>
+              <!-- Footer Links -->
+
+              <!-- Copyright -->
+              <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="https://mdbootstrap.com/education/bootstrap/"> GiayHoangAnh.com</a>
+              </div>
+              <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+        </div>
+
+    </form>
+</body>
+</html>
