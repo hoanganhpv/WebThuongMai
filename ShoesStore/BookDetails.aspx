@@ -27,6 +27,11 @@
                             <b>Shoes Number:</b>&nbsp;<%#:Item.BookID %>
                         </span>                         
                         <br />   
+                        <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>">
+                            <span>
+                                <b>Thêm vào Giỏ hàng<b>
+                            </span>
+                        </a>
                     </td>    
                 </tr>    
             </table>   
