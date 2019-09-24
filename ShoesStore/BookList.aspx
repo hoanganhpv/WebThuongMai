@@ -40,7 +40,12 @@
                                     </a>                                     
                                     <br />                                     
                                     <span><b>Price: </b><%#:String.Format("{0:c}",Item.UnitPrice)%>  </span> 
-                                    <br />        
+                                    <br />
+                                    <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>">
+                                        <span>
+                                            <b>Thêm vào Giỏ hàng<b>
+                                         </span>
+                                     </a>
                                 </td>                
                             </tr>                            
                             <tr>                                
