@@ -65,8 +65,8 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/About">VỀ CHÚNG TÔI</a></li>
                         <li><a runat="server" href="~/Contact">LIÊN HỆ</a></li>
-                        <li><a runat="server" href="~/BookList">SẢN PHẨM</a></li> 
-                        <li><a runat="server" href="~/ShoppingCart" ID="cartCount">&nbsp;</a></li>
+                        <li><a runat="server" href="~/DsSanPham">SẢN PHẨM</a></li> 
+                        <li><a runat="server" href="~/GioHang" ID="cartCount">&nbsp;</a></li>
                     </ul>
                 </div>
             </div>

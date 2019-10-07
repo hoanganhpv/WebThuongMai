@@ -15,16 +15,16 @@ namespace ShoesStore
         {
 
         }
-        public IQueryable<Category> GetCategories()
+        public IQueryable<NSX> GetNSXs()
         {
-            var _db = new ShoesStore.Models.BookContext();
-            IQueryable<Category> query = _db.Categories;
+            var _db = new ShoesStore.Models.GiayCT();
+            IQueryable<NSX> query = _db.NSXs;
             return query;
         }
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            using (ShoppingCartAction usersShoppingCart = new
-            ShoppingCartAction())
+            using (MuaHang usersShoppingCart = new
+            MuaHang())
             {
                 string cartStr = string.Format("Giỏ hàng ({0})",
                 usersShoppingCart.GetCount());
