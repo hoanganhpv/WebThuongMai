@@ -1,16 +1,5 @@
 # Giày Hoàng Anh
 
-## Database
-
-<img src="https://raw.githubusercontent.com/hoanganhpv/WebThuongMai/master/dbpic1.png"/>
-
-<img src="https://raw.githubusercontent.com/hoanganhpv/WebThuongMai/master/dbpic2.png"/>
-
-<img src="https://raw.githubusercontent.com/hoanganhpv/WebThuongMai/master/dbpic3.png"/>
-
-<img src="https://raw.githubusercontent.com/hoanganhpv/WebThuongMai/master/dbpic4.png"/>
-
-<img src="https://raw.githubusercontent.com/hoanganhpv/WebThuongMai/master/dbpic5.png"/>
 
 ## Trang chủ
 
@@ -42,3 +31,14 @@
 <img src="https://raw.githubusercontent.com/hoanganhpv/WebThuongMai/master/RMImages/Footer.PNG"/>
 
 
+## Database
+
+<img src="https://raw.githubusercontent.com/hoanganhpv/WebThuongMai/master/dbpic1.png"/>
+
+<img src="https://raw.githubusercontent.com/hoanganhpv/WebThuongMai/master/dbpic2.png"/>
+
+<img src="https://raw.githubusercontent.com/hoanganhpv/WebThuongMai/master/dbpic3.png"/>
+
+<img src="https://raw.githubusercontent.com/hoanganhpv/WebThuongMai/master/dbpic4.png"/>
+
+<img src="https://raw.githubusercontent.com/hoanganhpv/WebThuongMai/master/dbpic5.png"/>
